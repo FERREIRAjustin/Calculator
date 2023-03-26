@@ -23,10 +23,10 @@
 
             <table>
                 <tr>
-                    <td><input class="btn operator" type="button" value="C"/></td>
-                    <td><input class="btn operator" type="button" value="<"/></td>
+                    <td><input class="btn operator" type="button" id="clear" value="C"/></td>
+                    <td><input class="btn operator" type="button" id="back" value="<"/></td>
                     <td><input onclick="insert('/')" class="btn maths" type="button" value="/"/></td>
-                    <td><input onclick="insert('x')" class="btn maths" type="button" value="x"/></td>
+                    <td><input onclick="insert('*')" class="btn maths" type="button" value="x"/></td>
                 </tr>  
                 <tr>
                     <td><input onclick="insert(7)" class="btn chiffre" type="button" value="7"/></td>
@@ -35,7 +35,7 @@
                     <td><input onclick="insert('-')" class="btn maths" type="button" value="-"/></td>
                 </tr>
                 <tr>
-                    <td><input class="btn chiffre" type="button" onclick="insert(4)" value="4" /></td>
+                    <td><input onclick="insert(4)" class="btn chiffre" type="button"  value="4" /></td>
                     <td><input onclick="insert(5)" class="btn chiffre" type="button" value="5"/></td>
                     <td><input onclick="insert(6)" class="btn chiffre" type="button" value="6"/></td>
                     <td><input onclick="insert('+')" class="btn maths" type="button" value="+"/></td>
@@ -44,7 +44,7 @@
                     <td><input onclick="insert(1)" class="btn chiffre" type="button" value="1"/></td>
                     <td><input onclick="insert(2)" class="btn chiffre" type="button" value="2"/></td>
                     <td><input onclick="insert(3)" class="btn chiffre" type="button" value="3"/></td>
-                    <td rowspan="2"><input onclick="insert('=')" class="btn operator" type="button" value="="/></td>
+                    <td rowspan="2"><input class="btn operator" id="equal" type="button" value="="/></td>
                 </tr>
                 <tr>
                     <td colspan="2"><input onclick="insert(0)" class="btn chiffre" type="button" value="0"/></td>
